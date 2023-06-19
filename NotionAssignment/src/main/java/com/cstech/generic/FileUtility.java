@@ -6,7 +6,7 @@ import java.util.Properties;
 
 public class FileUtility {
 	public String readDataFromPropertyFile(String key) throws IOException {
-		FileInputStream fileread = new FileInputStream("./src/test/resources/data/common-data.property");
+		FileInputStream fileread = new FileInputStream("./src/test/resources/data/Data-data.property");
 		Properties pobj = new Properties();
 		pobj.load(fileread);
 		String value = pobj.getProperty(key);

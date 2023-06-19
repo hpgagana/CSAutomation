@@ -13,6 +13,7 @@ public class BaseClass {
 
 	@BeforeClass
 	public void openapplication() throws IOException {
+		System.setProperty("webdriver.chrome.driver", "./src/main/resources/driver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
